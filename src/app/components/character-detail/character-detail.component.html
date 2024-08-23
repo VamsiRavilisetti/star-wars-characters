@@ -1,0 +1,32 @@
+<div *ngIf="character">
+    <h2>{{ character.name }}</h2>
+
+    <div>
+        <strong>Species:</strong> {{ species || 'Unknown' }}
+    </div>
+
+    <div>
+        <strong>Movies:</strong>
+        <ul>
+            <li *ngFor="let movie of movies">{{ movie }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <strong>Vehicles:</strong>
+        <ul>
+            <li *ngFor="let vehicle of vehicles">{{ vehicle }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <strong>Starships:</strong>
+        <ul>
+            <li *ngFor="let starship of starships">{{ starship }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <strong>Birth Year:</strong> {{ character.birth_year }}
+    </div>
+</div>

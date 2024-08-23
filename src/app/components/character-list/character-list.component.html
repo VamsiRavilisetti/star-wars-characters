@@ -1,0 +1,5 @@
+<mat-list-item *ngFor="let character of filteredCharacters">
+    <a [routerLink]="['/characters', character.url.split('/').slice(-2, -1)[0]]">
+        {{ character.name }}
+    </a>
+</mat-list-item>
